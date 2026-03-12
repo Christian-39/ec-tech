@@ -105,6 +105,29 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', updateActiveNavLink);
 
     // ========================================
+    // Close Mobile Menu on Outside Click
+    // ========================================
+    document.addEventListener('click', (event) => {
+        const isMenuOpen = navMenu.classList.contains('active');
+        const isClickInsideMenu = navMenu.contains(event.target);
+        const isClickInsideHamburger = hamburger.contains(event.target);
+
+        if (isMenuOpen && !isClickInsideMenu && !isClickInsideHamburger) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+        }
+    });
+
+    window.addEventListener('scroll', () => {
+        if (navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+        }
+    });
+
+    // ========================================
     // Back to Top Button
     // ========================================
     function handleBackToTop() {
