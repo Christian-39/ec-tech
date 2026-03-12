@@ -30,10 +30,18 @@
 }
 
 /* Reset & Base Styles */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 html {
@@ -49,7 +57,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -307,13 +320,29 @@ img {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-30px) rotate(5deg); }
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(5deg);
+    }
 }
 
 @keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 0.3; }
-    50% { transform: scale(1.1); opacity: 0.5; }
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
 }
 
 .hero-content {
@@ -344,8 +373,15 @@ img {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
 }
 
 .hero-title {
@@ -456,8 +492,15 @@ img {
 }
 
 @keyframes floatCard {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
 }
 
 .scroll-indicator {
@@ -1315,6 +1358,7 @@ img {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1322,8 +1366,13 @@ img {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideInLeft {
@@ -1331,6 +1380,7 @@ img {
         opacity: 0;
         transform: translateX(-50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -1342,6 +1392,7 @@ img {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -1358,66 +1409,66 @@ img {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .hero-text {
         order: 1;
     }
-    
+
     .hero-image {
         order: 2;
         max-width: 600px;
         margin: 0 auto;
     }
-    
+
     .hero-subtitle {
         margin: 0 auto 35px;
     }
-    
+
     .hero-cta {
         justify-content: center;
     }
-    
+
     .hero-stats {
         justify-content: center;
     }
-    
+
     .floating-card {
         display: none;
     }
-    
+
     .about-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .industries-grid {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .portfolio-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .why-choose-wrapper {
         grid-template-columns: 1fr;
         gap: 50px;
     }
-    
+
     .why-choose-content .section-header {
         text-align: center;
     }
-    
+
     .experience-badge {
         right: 20px;
     }
-    
+
     .contact-wrapper {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-wrapper {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1428,7 +1479,7 @@ img {
     .section-padding {
         padding: 70px 0;
     }
-    
+
     .nav-menu {
         position: fixed;
         top: 80px;
@@ -1443,104 +1494,114 @@ img {
         transition: var(--transition-normal);
         z-index: 999;
     }
-    
+
     .nav-menu.active {
         transform: translateY(0);
     }
-    
+
     .hamburger {
         display: flex;
     }
-    
+
     .hamburger.active span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
-    
+
     .hamburger.active span:nth-child(2) {
         opacity: 0;
     }
-    
+
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
     }
-    
+
     .nav-actions {
         display: none;
     }
-    
+
     .hero {
         padding: 100px 0 60px;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-cta {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .hero-cta .btn {
         width: 100%;
     }
-    
+
     .hero-stats {
         flex-direction: column;
         gap: 25px;
     }
-    
+
     .section-title {
         font-size: 2.2rem;
     }
-    
+
     .about-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .services-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .industries-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .form-row {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-wrapper {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .footer-social {
         justify-content: center;
     }
-    
+
     .footer-bottom {
         flex-direction: column;
         gap: 15px;
         text-align: center;
     }
-    
+
     .whatsapp-float {
+        position: fixed;
+        /* Crucial: takes it out of the document flow */
         width: 55px;
         height: 55px;
-        font-size: 1.6rem;
         bottom: 20px;
         right: 20px;
+        z-index: 9999;
+        /* Ensure it stays on top of other elements */
+        display: flex;
+        /* Centers the icon inside the 55px box */
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        /* Add a background color so it's visible immediately */
+        background-color: #25d366;
     }
-    
+
     .whatsapp-tooltip {
         display: none;
     }
-    
+
     .back-to-top {
         right: 85px;
         bottom: 20px;
@@ -1554,27 +1615,27 @@ img {
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1rem;
     }
-    
+
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .industries-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .experience-badge {
         padding: 15px 20px;
     }
-    
+
     .exp-number {
         font-size: 2rem;
     }
-    
+
     .contact-form-wrapper {
         padding: 25px;
     }
@@ -1584,18 +1645,19 @@ img {
    Print Styles
    ======================================== */
 @media print {
+
     .navbar,
     .whatsapp-float,
     .back-to-top,
     .scroll-indicator {
         display: none !important;
     }
-    
+
     .hero {
         min-height: auto;
         padding: 40px 0;
     }
-    
+
     .section-padding {
         padding: 40px 0;
     }
