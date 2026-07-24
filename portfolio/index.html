@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Eze Christian - Senior Frontend Software Engineer specializing in high-performance web applications, UI/UX, and accessibility." />
+  <title>Eze Christian | Senior Frontend Engineer</title>
+  <link rel="stylesheet" href="portfolio/style.css" />
+</head>
+<body>
+  <div id="preloader" class="preloader" aria-hidden="true">
+    <div class="spinner"></div>
+  </div>
+
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <div class="bg-gradient-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-gradient-orb orb-2" aria-hidden="true"></div>
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="#" class="brand-logo" aria-label="Eze Christian Home">
+      <span class="logo-accent">&lt;/&gt;</span> Eze Christian
+    </a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-container">
+        <span class="hero-badge">Crafting Digital Experiences</span>
+        <h1 id="hero-title" class="hero-title">My Projects</h1>
+        <p class="hero-description">
+          A collection of websites and web applications I have designed and developed with precision, performance, and accessibility in mind.
+        </p>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title" class="sr-only">Featured Projects List</h2>
+        <div class="projects-grid" id="projectsGrid">
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; <span id="currentYear"></span> Designed & Developed by <strong>Eze Christian</strong></p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" type="button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="portfolio/script.js"></script>
+</body>
+</html>
