@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Eze Christian - Senior Frontend Software Engineer specializing in high-performance web applications, UI/UX, and accessibility." />
-  <title>Eze Christian | Senior Frontend Engineer</title>
+  <meta name="description" content="Portfolio of Eze Christian - Senior Fullstack Developer & Digital Creator specializing in web applications and design." />
+  <title>Eze Christian | Portfolio</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,53 +13,84 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="preloader" class="preloader" aria-hidden="true">
-    <div class="spinner"></div>
-  </div>
 
-  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
-
-  <div class="bg-gradient-orb orb-1" aria-hidden="true"></div>
-  <div class="bg-gradient-orb orb-2" aria-hidden="true"></div>
-  <div class="bg-grid-overlay" aria-hidden="true"></div>
+  <div class="bg-gradient-spot" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a href="#" class="brand-logo" aria-label="Eze Christian Home">
-      <span class="logo-accent">&lt;/&gt;</span> Eze Christian
-    </a>
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="Home">
+        <span class="logo-mark">EC</span>
+        <span class="logo-text">Eze Christian</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="btn btn-secondary btn-sm">Get in Touch</a>
+      </nav>
+    </div>
   </header>
 
   <main id="main-content">
-    <section class="hero-section" aria-labelledby="hero-title">
+    <section class="hero-section">
       <div class="container hero-container">
-        <span class="hero-badge">Engineering &amp; Architecture</span>
-        <h1 id="hero-title" class="hero-title">My Projects</h1>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for new projects
+        </div>
+        
+        <h1 class="hero-title">
+          Crafting high-performance web applications &amp; digital experiences.
+        </h1>
+        
         <p class="hero-description">
-          A collection of websites and web applications I have designed and developed with precision, performance, and accessibility in mind.
+          I design and engineer clean, fast, and responsive digital products with a focus on modern web standards and exceptional user experience.
         </p>
+        
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            View Projects
+            <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
       </div>
     </section>
 
-    <section class="projects-section" id="projects" aria-labelledby="projects-title">
+    <section class="projects-section" id="projects">
       <div class="container">
-        <h2 id="projects-title" class="sr-only">Featured Projects List</h2>
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Built with precision &amp; care</h2>
+          <p class="section-subtitle">A collection of web applications, platforms, and digital products I've engineered.</p>
+        </div>
+
         <div class="projects-grid" id="projectsGrid">
           </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <h2 class="contact-title">Have a project in mind?</h2>
+          <p class="contact-description">Let's build something exceptional together. Feel free to reach out for collaborations or inquiries.</p>
+          <a href="mailto:contact@ezechristian.com" class="btn btn-primary btn-lg">Start a Conversation</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-container">
-      <p>&copy; <span id="currentYear"></span> Designed &amp; Developed by <strong>Eze Christian</strong></p>
+      <p>&copy; <span id="currentYear"></span> Eze Christian. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </footer>
-
-  <button id="backToTop" class="back-to-top" aria-label="Back to top" type="button">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <polyline points="18 15 12 9 6 15"></polyline>
-    </svg>
-  </button>
 
   <script src="script.js"></script>
 </body>
