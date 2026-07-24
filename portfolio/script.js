@@ -25,7 +25,7 @@ const projects = [
     title: "Payuee Marketplace",
     description: "A secure marketplace ecosystem powered by escrow technology. Features product sourcing, secure transactions, escrow payment handling, order creation and verification, wallet management, and transaction tracking.",
     image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=800&auto=format&fit=crop",
-    url: "#",
+    url: "https://payuee.com",
     technologies: ["Django", "Python", "PAYUEE Escrow API", "PAYUEE Wallet System", "JavaScript"]
   },
   {
@@ -60,14 +60,14 @@ const projects = [
     title: "OYA Management System",
     description: "A complete organization and member management platform for Okpo Youths Association. Features member registration, executive management, dues tracking, prepaid records, finance management, notifications, projects management, taskforce management, motorcycle inventory tracking, and role-based access control.",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
-    url: "#",
+    url: "https://okpo.onrender.com",
     technologies: ["Django", "Python", "MySQL", "Backblaze B2", "HTML", "CSS", "JavaScript"]
   },
   {
     title: "Homes Effect Global Enterprises",
     description: "A corporate business website for Homes Effect Global Enterprises Ltd. Features business information, service presentation, company branding, and professional online presence.",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
-    url: "#",
+    url: "https://christian-39.github.io/homes-effect-global-enterprises-ltd/",
     technologies: ["HTML5", "CSS3", "JavaScript", "Backblaze B2", "Corporate Design"]
   },
   {
