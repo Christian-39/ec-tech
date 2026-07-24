@@ -8,32 +8,74 @@
 // 1. Projects Data Array
 const projects = [
   {
-    title: "HighlightsHub",
-    description: "A responsive global sports application displaying global football highlights, featuring filtering options by leagues and clubs.",
-    image: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=800&auto=format&fit=crop",
-    url: "https://example.com/highlightshub",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Django", "Sports API"]
+    title: "Chris Gadgets",
+    description: "A modern electronics e-commerce platform for selling phones, laptops, accessories, solar panels, inverter batteries, and other gadgets. Features product marketplace, cart and checkout, user authentication, orders and tracking, Payuee Escrow API integration, wallet management, admin dashboard, inventory management, and Backblaze B2 media storage.",
+    image: "https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=800&auto=format&fit=crop",
+    url: "https://chris-gadgets.onrender.com",
+    technologies: ["Django", "Python", "JavaScript", "Payuee API", "Backblaze B2", "MySQL"]
   },
   {
-    title: "CHRIS LUX & Accessories",
-    description: "A luxury e-commerce application featuring dynamic collection filtering, rich product detail views, and seamless navigation.",
-    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop",
-    url: "https://example.com/chrislux",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Django", "MySQL"]
+    "title": "Chris Lux & Accessories",
+    "description": "A luxury women's hair accessories e-commerce store featuring dynamic collection filtering, rich product detail views, category browsing for hairpieces, extensions, and styling tools, modern luxury UI, and seamless payment integration.",
+    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop",
+    "url": "https://chris-lux.onrender.com",
+    "technologies": ["Django", "Python", "JavaScript", "Backblaze B2", "MySQL", "CSS3"]
   },
   {
-    title: "CRAVINGS Restaurant Platform",
-    description: "A mobile-first online food ordering interface with automated chat pre-fills and dynamic menu item routing.",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop",
-    url: "https://example.com/cravings",
-    technologies: ["HTML5", "CSS3", "JavaScript", "WhatsApp API"]
+    title: "Payuee Marketplace",
+    description: "A secure marketplace ecosystem powered by escrow technology. Features product sourcing, secure transactions, escrow payment handling, order creation and verification, wallet management, and transaction tracking.",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=800&auto=format&fit=crop",
+    url: "#",
+    technologies: ["Django", "Python", "PAYUEE Escrow API", "PAYUEE Wallet System", "JavaScript"]
   },
   {
-    title: "Tobaz Autos & Logistics",
-    description: "A robust commercial platform for automotive inventory tracking, spare parts management, and delivery logistics.",
-    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=800&auto=format&fit=crop",
-    url: "https://example.com/tobaz-autos",
-    technologies: ["Django", "Python", "MySQL", "JavaScript", "CSS3"]
+    title: "Tobaz Autos",
+    description: "A robust commercial platform for automotive inventory tracking, vehicle listings, car showcase, vehicle details, spare parts management, and delivery logistics.",
+    image: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=800&auto=format&fit=crop",
+    url: "https://tobaz-autos.onrender.com",
+    technologies: ["Django", "Python", "MySQL", "Backblaze B2", "JavaScript", "CSS3"]
+  },
+  {
+    title: "Cineverse",
+    description: "A movie discovery and entertainment platform featuring movie browsing, cinema-style interface, movie information display, and an entertainment-focused UI.",
+    image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=800&auto=format&fit=crop",
+    url: "https://christian-39.github.io/cineverse-/gemini.html",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Movie API"]
+  },
+  {
+    title: "EC TECH",
+    description: "Technology company website and developer brand platform. Showcases web development services, company branding, portfolio presentation, and project highlights.",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop",
+    url: "https://ec-tech.onrender.com/",
+    technologies: ["Django", "Python", "JavaScript", "HTML5", "CSS3"]
+  },
+  {
+    title: "My Portfolio",
+    description: "My personal developer portfolio displaying completed projects, showcasing technical skills, and highlighting web development experience.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+    url: "https://christian-39.github.io/payuee/portfolio.html",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"]
+  },
+  {
+    title: "OYA Management System",
+    description: "A complete organization and member management platform for Okpo Youths Association. Features member registration, executive management, dues tracking, prepaid records, finance management, notifications, projects management, taskforce management, motorcycle inventory tracking, and role-based access control.",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
+    url: "#",
+    technologies: ["Django", "Python", "MySQL", "Backblaze B2", "HTML", "CSS", "JavaScript"]
+  },
+  {
+    title: "Homes Effect Global Enterprises",
+    description: "A corporate business website for Homes Effect Global Enterprises Ltd. Features business information, service presentation, company branding, and professional online presence.",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+    url: "#",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Backblaze B2", "Corporate Design"]
+  },
+  {
+    title: "TrustSwap",
+    description: "A peer-to-peer cryptocurrency marketplace featuring user authentication, crypto trading workflow, wallet-related operations, transaction management, and real-time communication architecture.",
+    image: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?q=80&w=800&auto=format&fit=crop",
+    url: "#",
+    technologies: ["Django", "Python", "WebSocket", "Crypto API", "JavaScript"]
   }
 ];
 
@@ -51,17 +93,25 @@ function renderProjects(items) {
 
   const fragment = document.createDocumentFragment();
 
-  items.forEach(project => {
+  items.forEach((project, index) => {
+    const hasLiveUrl = project.url && project.url !== '#';
     const card = document.createElement('a');
-    card.href = project.url;
-    card.target = "_blank";
-    card.rel = "noopener noreferrer";
+    card.href = project.url || '#';
+    if (hasLiveUrl) {
+      card.target = "_blank";
+      card.rel = "noopener noreferrer";
+    }
     card.className = "project-card";
-    card.setAttribute('aria-label', `${project.title} - Opens live site in new tab`);
+    card.setAttribute('aria-label', `${project.title} - ${hasLiveUrl ? 'Opens live site in new tab' : 'Project details'}`);
 
     const techBadges = project.technologies
       .map(tech => `<span class="tech-badge">${escapeHTML(tech)}</span>`)
       .join('');
+
+    const actionLabel = hasLiveUrl ? 'View Live Site' : 'View Details';
+    const actionIcon = hasLiveUrl
+      ? `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>`
+      : `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>`;
 
     card.innerHTML = `
       <div class="card-image-container">
@@ -82,11 +132,8 @@ function renderProjects(items) {
         </div>
         <div class="card-action">
           <span class="card-button-label">
-            View Live Site
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <line x1="7" y1="17" x2="17" y2="7"></line>
-              <polyline points="7 7 17 7 17 17"></polyline>
-            </svg>
+            ${actionLabel}
+            ${actionIcon}
           </span>
         </div>
       </div>
@@ -133,7 +180,7 @@ function initScrollAnimations() {
 
   const cards = document.querySelectorAll('.project-card');
   cards.forEach((card, index) => {
-    card.style.transitionDelay = `${index * 0.1}s`;
+    card.style.transitionDelay = `${index * 0.08}s`;
     observer.observe(card);
   });
 }
