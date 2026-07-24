@@ -5,7 +5,7 @@
 
 'use strict';
 
-// 1. Projects Data Structure (Easily editable array)
+// 1. Projects Data Structure
 const projects = [
   {
     title: "Enterprise Analytics Dashboard",
@@ -178,8 +178,8 @@ function initCursorGlow() {
   });
 
   function animateGlow() {
-    currentX += (mouseX - currentX) * 0.1;
-    currentY += (mouseY - currentY) * 0.1;
+    currentX += (mouseX - currentX) * 0.08;
+    currentY += (mouseY - currentY) * 0.08;
     
     glow.style.left = `${currentX}px`;
     glow.style.top = `${currentY}px`;
@@ -192,31 +192,28 @@ function initCursorGlow() {
 
 // 7. Scroll Animations via IntersectionObserver
 function initIntersectionObserver() {
-  // Check user preference for reduced motion
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (prefersReducedMotion) return;
 
   const observerOptions = {
     root: null,
-    rootMargin: '0px 0px -50px 0px',
+    rootMargin: '0px 0px -40px 0px',
     threshold: 0.1
   };
 
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Add staggering effect based on index in DOM
         const card = entry.target;
         card.classList.add('is-visible');
-        obs.unobserve(card); // Animate once
+        obs.unobserve(card);
       }
     });
   }, observerOptions);
 
-  // Attach observer to generated cards
   const cards = document.querySelectorAll('.project-card');
   cards.forEach((card, index) => {
-    card.style.transitionDelay = `${(index % 4) * 0.1}s`;
+    card.style.transitionDelay = `${(index % 4) * 0.08}s`;
     observer.observe(card);
   });
 }
